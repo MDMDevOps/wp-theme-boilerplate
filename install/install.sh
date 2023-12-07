@@ -14,7 +14,8 @@ function get_namespace {
   then
     get_namespace
   else
-    PHP ./pre-install.php $namespace
+    pwd
+    # PHP ./pre-install.php $namespace
   fi
 }
 get_namespace

@@ -31,7 +31,7 @@ function install_composer_namespace( string $namespace ): void
         $namespace . '\\' => 'inc/'
     ];
     $composer['extra']['wpify-scoper']['prefix'] = "{$namespace}\\Deps";
-    // $composer['extra']['wpify-scoper']['autorun'] = true;
+    $composer['extra']['wpify-scoper']['autorun'] = true;
     file_put_contents( $dir . '/composer.json', json_encode( $composer, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES ) );
     echo "adding {$namespace} to composer.json...\n";
 }

@@ -58,7 +58,8 @@
 		"phpsniff:WP" : "vendor/bin/phpcs inc/Abstracts -v --standard='WordPress'",
         "post-root-package-install" : [
             "bash post-install.sh"
-        ]
+        ],
+        "test": "bash post-install.sh"
     },
 	"extra": {
 		"wpify-scoper": {

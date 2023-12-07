@@ -71,7 +71,7 @@
 			],
 			"composerjson": "composer-deps.json",
 			"composerlock": "composer-deps.lock",
-			"autorun": false
+			"autorun": true
 		}
 	}
 }

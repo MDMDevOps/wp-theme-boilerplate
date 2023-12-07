@@ -1,0 +1,17 @@
+{
+    "name": "mwf/wp-theme-boilerplate",
+    "description": "WP Plugin/Theme Library",
+	"version": "1.0.0",
+    "type": "composer",
+    "stability": "dev",
+    "license": "GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>",
+    "authors": [
+        {
+            "name": "Bob Moore",
+            "email": "bob@bobmoore.dev"
+        }
+    ],
+    "packages": {
+        "mwf/wp-theme-boilerplate": "^1.0"
+    }
+}

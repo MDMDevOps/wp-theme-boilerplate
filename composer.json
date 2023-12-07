@@ -36,7 +36,7 @@
         }
     ],
 	"require": {
-		"mwf/wp-scripts-config": "dev-main"
+		"mwf/wp-scripts-config": "^1.0"
 	},
 	"require-dev": {
 		"squizlabs/php_codesniffer": "^3.7",
@@ -57,9 +57,12 @@
 		"phpsniff:PSR2" : "vendor/bin/phpcs inc -v --standard='PSR2'",
 		"phpsniff:WP" : "vendor/bin/phpcs inc/Abstracts -v --standard='WordPress'",
         "post-root-package-install" : [
-            "bash post-install.sh"
+            "bash ./install/install.sh"
         ],
-        "test": "bash post-install.sh"
+		"post-create-project-cmd" : [
+			"bash ./install/post-install.sh"
+		],
+        "test": "bash ./install/install.sh"
     },
 	"extra": {
 		"wpify-scoper": {

@@ -13,7 +13,7 @@
 
 namespace Mwf\Theme\Routes;
 
-use Mwf\Theme\Deps\Mwf\Wp\Framework,
+use Mwf\Theme\Deps\WPCore,
 	Mwf\Theme\Deps\DI\OnMount;
 
 /**
@@ -22,11 +22,11 @@ use Mwf\Theme\Deps\Mwf\Wp\Framework,
  * @subpackage Route
  */
 class Frontend extends Lib\Abstracts\Mountable implements
-	Framework\Interfaces\Uses\ScriptDispatcher,
-	Framework\Interfaces\Uses\StyleDispatcher
+	WPCore\Interfaces\Uses\ScriptDispatcher,
+	WPCore\Interfaces\Uses\StyleDispatcher
 {
-	use Framework\Traits\Uses\ScriptDispatcher;
-	use Framework\Traits\Uses\StyleDispatcher;
+	use WPCore\Traits\Uses\ScriptDispatcher;
+	use WPCore\Traits\Uses\StyleDispatcher;
 
 	/**
 	 * Load actions and filters, and other setup requirements

@@ -15,8 +15,8 @@ namespace Mwf\Theme\Controllers;
 
 use Mwf\Theme\Providers as Provider;
 
-use Mwf\Theme\Deps\Mwf\Wp\Framework,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\WPCore,
+	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
 
 /**
  * Providers controller class
@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\Mwf\Wp\Framework,
  *
  * @subpackage Controllers
  */
-class Providers extends Framework\Abstracts\Mountable implements Framework\Interfaces\Controller
+class Providers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\Controller
 {
 	/**
 	 * Get definitions that should be added to the service container
@@ -35,7 +35,7 @@ class Providers extends Framework\Abstracts\Mountable implements Framework\Inter
 	public static function getServiceDefinitions(): array
 	{
 		return [
-			Provider\Astra::class => Framework\DI\ContainerBuilder::autowire(),
+			Provider\Astra::class => ContainerBuilder::autowire(),
 		];
 	}
 	/**

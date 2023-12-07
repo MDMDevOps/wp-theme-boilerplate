@@ -13,14 +13,15 @@
 
 namespace Mwf\Theme;
 
-use Mwf\Theme\Deps\Mwf\Wp\Framework;
+use Mwf\Theme\Deps\WPCore,
+	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
 
 /**
  * Main theme file
  *
  * @subpackage Main
  */
-class Theme extends Framework\Main
+class Theme extends WPCore\Main
 {
 	/**
 	 * Constructor for new instance of plugin
@@ -42,9 +43,9 @@ class Theme extends Framework\Main
 	protected function getServiceDefinitions(): array
 	{
 		$definitions = [
-			Controllers\Handlers::class  => Framework\DI\ContainerBuilder::autowire(),
-			Controllers\Router::class    => Framework\DI\ContainerBuilder::autowire(),
-			Controllers\Providers::class => Framework\DI\ContainerBuilder::autowire(),
+			Controllers\Handlers::class  => ContainerBuilder::autowire(),
+			Controllers\Router::class    => ContainerBuilder::autowire(),
+			Controllers\Providers::class => ContainerBuilder::autowire(),
 		];
 		return array_merge( $definitions, parent::getServiceDefinitions() );
 	}

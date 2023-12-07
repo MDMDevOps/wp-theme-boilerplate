@@ -15,8 +15,8 @@ namespace Mwf\Theme\Controllers;
 
 use Mwf\Theme\Handlers as Handler;
 
-use Mwf\Theme\Deps\Mwf\Wp\Framework,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\WPCore,
+	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
 
 /**
  * Service controller class
@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\Mwf\Wp\Framework,
  *
  * @subpackage Controllers
  */
-class Handlers extends Framework\Abstracts\Mountable implements Framework\Interfaces\Controller
+class Handlers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\Controller
 {
 	/**
 	 * Get definitions that should be added to the service container
@@ -35,8 +35,8 @@ class Handlers extends Framework\Abstracts\Mountable implements Framework\Interf
 	public static function getServiceDefinitions(): array
 	{
 		return [
-			Handler\Editor::class => Lib\DI\ContainerBuilder::autowire(),
-			Handler\Images::class => Lib\DI\ContainerBuilder::autowire(),
+			Handler\Editor::class => ContainerBuilder::autowire(),
+			Handler\Images::class => ContainerBuilder::autowire(),
 		];
 	}
 	/**

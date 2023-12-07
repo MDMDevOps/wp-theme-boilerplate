@@ -15,7 +15,8 @@ namespace Mwf\Theme\Controllers;
 
 use Mwf\Theme\Routes;
 
-use Mwf\Lib;
+use Mwf\Theme\Deps\WPCore,
+	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
 
 /**
  * Route controller class
@@ -24,7 +25,7 @@ use Mwf\Lib;
  *
  * @subpackage Controllers
  */
-class Router extends Lib\Controllers\Routes
+class Router extends WPCore\Controllers\Routes
 {
 	/**
 	 * Get definitions that should be added to the service container
@@ -34,18 +35,18 @@ class Router extends Lib\Controllers\Routes
 	public static function getServiceDefinitions(): array
 	{
 		return [
-			Routes\Archive::class  => Lib\DI\ContainerBuilder::autowire(),
-			Routes\Search::class   => Lib\DI\ContainerBuilder::autowire(),
-			Routes\Blog::class     => Lib\DI\ContainerBuilder::autowire(),
-			Routes\Single::class   => Lib\DI\ContainerBuilder::autowire(),
-			Routes\Admin::class    => Lib\DI\ContainerBuilder::autowire(),
-			Routes\Frontend::class => Lib\DI\ContainerBuilder::autowire(),
-			'route.archive'        => Lib\DI\ContainerBuilder::get( Routes\Archive::class ),
-			'route.search'         => Lib\DI\ContainerBuilder::get( Routes\Search::class ),
-			'route.blog'           => Lib\DI\ContainerBuilder::get( Routes\Blog::class ),
-			'route.single'         => Lib\DI\ContainerBuilder::get( Routes\Single::class ),
-			'route.admin'          => Lib\DI\ContainerBuilder::get( Routes\Admin::class ),
-			'route.frontend'       => Lib\DI\ContainerBuilder::get( Routes\Frontend::class ),
+			Routes\Archive::class  => 	ContainerBuilder::autowire(),
+			Routes\Search::class   => 	ContainerBuilder::autowire(),
+			Routes\Blog::class     => 	ContainerBuilder::autowire(),
+			Routes\Single::class   => 	ContainerBuilder::autowire(),
+			Routes\Admin::class    => 	ContainerBuilder::autowire(),
+			Routes\Frontend::class => 	ContainerBuilder::autowire(),
+			'route.archive'        => 	ContainerBuilder::get( Routes\Archive::class ),
+			'route.search'         => 	ContainerBuilder::get( Routes\Search::class ),
+			'route.blog'           => 	ContainerBuilder::get( Routes\Blog::class ),
+			'route.single'         => 	ContainerBuilder::get( Routes\Single::class ),
+			'route.admin'          => 	ContainerBuilder::get( Routes\Admin::class ),
+			'route.frontend'       => 	ContainerBuilder::get( Routes\Frontend::class ),
 		];
 	}
 }

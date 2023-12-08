@@ -43,7 +43,7 @@ class Astra extends WPCore\Abstracts\Mountable
 	 *
 	 * @return array<string>
 	 */
-	public function useAstraStyles( array $deps ): array
+	public function useStyles( array $deps ): array
 	{
 		global $wp_styles;
 

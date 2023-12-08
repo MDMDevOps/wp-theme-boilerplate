@@ -36,19 +36,32 @@ class Providers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\
 	public static function getServiceDefinitions(): array
 	{
 		return [
-			Provider\Astra::class => ContainerBuilder::autowire(),
+			Provider\Astra::class   => ContainerBuilder::autowire(),
+			Provider\Kadence::class => ContainerBuilder::autowire(),
 		];
 	}
 	/**
 	 * Actions to perform when the class is loaded
 	 *
-	 * @param Provider\Astra $astra : astra provider instance.
+	 * @param Provider\Astra $provider : astra provider instance.
 	 *
 	 * @return void
 	 */
 	#[OnMount]
-	public function mountAstra( Provider\Astra $astra ): void
+	public function mountAstra( Provider\Astra $provider ): void
 	{
-		add_filter( "{$this->package}_frontend_style_dependencies", [ $astra, 'useAstraStyles' ] );
+		add_filter( "{$this->package}_frontend_style_dependencies", [ $provider, 'useStyles' ] );
+	}
+	/**
+	 * Actions to perform when the class is loaded
+	 *
+	 * @param Provider\Kadence $provider : kadence provider instance.
+	 *
+	 * @return void
+	 */
+	#[OnMount]
+	public function mountKadence( Provider\Kadence $provider ): void
+	{
+		add_filter( "{$this->package}_frontend_style_dependencies", [ $provider, 'useStyles' ] );
 	}
 }

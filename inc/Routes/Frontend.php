@@ -21,12 +21,12 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Route
  */
-class Frontend extends Lib\Abstracts\Mountable implements
-	Mwf\WPCore\Interfaces\Uses\ScriptDispatcher,
-	Mwf\WPCore\Interfaces\Uses\StyleDispatcher
+class Frontend extends WPCore\Abstracts\Mountable implements
+	WPCore\Interfaces\Uses\ScriptDispatcher,
+	WPCore\Interfaces\Uses\StyleDispatcher
 {
-	use Mwf\WPCore\Traits\Uses\ScriptDispatcher;
-	use Mwf\WPCore\Traits\Uses\StyleDispatcher;
+	use WPCore\Traits\Uses\ScriptDispatcher;
+	use WPCore\Traits\Uses\StyleDispatcher;
 
 	/**
 	 * Load actions and filters, and other setup requirements

@@ -21,7 +21,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Providers
  */
-class Astra extends Mwf\WPCore\Abstracts\Mountable
+class Astra extends WPCore\Abstracts\Mountable
 {
 	/**
 	 * Mount specific astra actions not related to class functions

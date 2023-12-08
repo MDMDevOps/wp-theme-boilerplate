@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Controllers
  */
-class Router extends Mwf\WPCore\Controllers\Routes
+class Router extends WPCore\Controllers\Routes
 {
 	/**
 	 * Get definitions that should be added to the service container

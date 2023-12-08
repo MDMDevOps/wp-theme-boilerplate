@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Controllers
  */
-class Handlers extends Mwf\WPCore\Abstracts\Mountable implements Mwf\WPCore\Interfaces\Controller
+class Handlers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\Controller
 {
 	/**
 	 * Get definitions that should be added to the service container

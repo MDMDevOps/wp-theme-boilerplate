@@ -21,7 +21,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Main
  */
-class Theme extends Mwf\WPCore\Main
+class Theme extends WPCore\Main
 {
 	/**
 	 * Constructor for new instance of plugin

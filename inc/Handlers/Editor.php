@@ -21,7 +21,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Services
  */
-class Editor extends Mwf\WPCore\Abstracts\Mountable
+class Editor extends WPCore\Abstracts\Mountable
 {
 	/**
 	 * Add theme support to the editor

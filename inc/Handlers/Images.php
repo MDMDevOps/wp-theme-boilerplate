@@ -21,7 +21,7 @@ use Mwf\Theme\Deps\Mwf\WPCore,
  *
  * @subpackage Services
  */
-class Images extends Mwf\WPCore\Abstracts\Mountable
+class Images extends WPCore\Abstracts\Mountable
 {
 	/**
 	 * Add custom image sizes

@@ -1,6 +1,6 @@
-# Astra Child Theme
+# Mid-West Family Child Theme Generator
 
-Base starter theme for building out complex websites with Astra. It uses our own MWF app framework to handle templating in twig (via Timber), Dependency Injection with PHP-DI, and Routing.
+Composer package used to generate wordpress child themes for different frameworks.
 
 ## Requirements
 
@@ -9,9 +9,3 @@ Base starter theme for building out complex websites with Astra. It uses our own
 - License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
 
 ## Getting Started
-
-1. Set up a local WordPress development environment, we recommend using [wp-env](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).
-2. Ensure you are using WordPress 6.3+.
-3. Clone / download this repository into the `/wp-content/themes/` directory of your new WordPress instance.
-4. Cd into `/wp-content/themes/astra-child`, and in your terminal run `composer install`
-4. In the WordPress admin, use the Appearance > Themes screen to activate Astra Child.

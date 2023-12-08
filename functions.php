@@ -9,7 +9,7 @@
  * @package Theme
  * @author  Bob Moore <bob.moore@midwestfamilymadison.com>
  * @license GPL-2.0+ <http://www.gnu.org/licenses/gpl-2.0.txt>
- * @link    https://github.com/MDMDevOps/astra-child
+ * @link    https://github.com/MDMDevOps/wp-theme-boilerplate
  * @since   1.0.0
  */
 

@@ -16,6 +16,7 @@ namespace Mwf\Theme\Controllers;
 use Mwf\Theme\Handlers as Handler;
 
 use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\OnMount,
 	Mwf\Theme\Deps\Mwf\WPCore\DI\ContainerBuilder;
 
 /**

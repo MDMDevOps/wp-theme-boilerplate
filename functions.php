@@ -19,6 +19,7 @@ namespace Mwf\Theme;
  * 
  * @see https://getcomposer.org/doc/01-basic-usage.md#autoloading
  */
-// require_once trailingslashit( __DIR__ ) . 'vendor/autoload.php';
+require_once trailingslashit( __DIR__ ) . 'deps/autoload.php';
+require_once trailingslashit( __DIR__ ) . 'vendor/autoload.php';
 
-// \Mwf\Lib\Factory::create( Theme::class, 'astra_child' );
+new Theme( 'mwf_theme' );

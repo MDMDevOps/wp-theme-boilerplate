@@ -2,19 +2,18 @@
 /**
  * Ensure being called from bash
  */
-if ( ! isset( $argv ) || ! isset( $argv[1] ) ) {
+if ( ! isset( $argv ) ) {
     return;
 }
 /**
  * Get the namespace argument
  */
-$namespace_arg = $argv[1];
+$namespace_arg = $argv[1] ?? 'Mwf\Theme';
 /**
- * If empty, bail...
+ * Get the theme slug argument
  */
-if ( empty( $namespace_arg ) ) {
-    return;
-}
+$slug_arg = $argv[2] ?? 'mwf_theme';
+
 /**
  * Replace namespace string in composer.json file
  *
@@ -33,7 +32,6 @@ function install_composer_namespace( string $namespace ): void
     $composer['extra']['wpify-scoper']['prefix'] = "{$namespace}\\Deps";
     $composer['extra']['wpify-scoper']['autorun'] = true;
     file_put_contents( $dir . '/composer.json', json_encode( $composer, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES ) );
-    echo "adding {$namespace} to composer.json...\n";
 }
 install_composer_namespace( $namespace_arg );
 /**
@@ -43,15 +41,15 @@ install_composer_namespace( $namespace_arg );
  *
  * @return void
  */
-function replace_functions_namespace( string $namespace ): void
+function replace_functions_namespace( string $namespace, string $slug ): void
 {
     $dir = dirname( __DIR__, 1 );
     $functions = file_get_contents( $dir . '/functions.php' );
-    $functions = str_replace( "Mwf\\Theme", $namespace , $functions );
+    $functions = str_replace( "Mwf\\Theme", $namespace, $functions );
+    $functions = str_replace( "mwf_theme", $slug, $functions );
     file_put_contents( $dir . '/functions.php', $functions );
-    echo "Updating {$namespace} functions.php...\n";
 }
-replace_functions_namespace( $namespace_arg );
+replace_functions_namespace( $namespace_arg, $slug_arg );
 /**
  * Update namespace in inc directory
  *
@@ -77,6 +75,5 @@ function replace_inc_namespace( string $namespace, string $path = 'inc/*' ): voi
         $content = str_replace( "Mwf\\Theme", $namespace , $content );
         file_put_contents( $filename, $content );
     }
-    echo "Updating {$namespace} Core Libraries...\n";
 }
 replace_inc_namespace( $namespace_arg, dirname( __DIR__, 1 ) . '/inc/*' );

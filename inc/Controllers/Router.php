@@ -15,8 +15,8 @@ namespace Mwf\Theme\Controllers;
 
 use Mwf\Theme\Routes;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\ContainerBuilder;
 
 /**
  * Route controller class
@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\WPCore,
  *
  * @subpackage Controllers
  */
-class Router extends WPCore\Controllers\Routes
+class Router extends Mwf\WPCore\Controllers\Routes
 {
 	/**
 	 * Get definitions that should be added to the service container

@@ -13,15 +13,15 @@
 
 namespace Mwf\Theme\Handlers;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\OnMount;
 
 /**
  * Adds custom editor support
  *
  * @subpackage Services
  */
-class Editor extends WPCore\Abstracts\Mountable
+class Editor extends Mwf\WPCore\Abstracts\Mountable
 {
 	/**
 	 * Add theme support to the editor

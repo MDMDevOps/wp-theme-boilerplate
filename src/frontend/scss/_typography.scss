@@ -1,0 +1,48 @@
+@use "mixins";
+
+body {
+	--wp--preset--font-size--scaler-colossus: #{mixins.clamp-fontsize( mixins.typescale(10, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-gigantic: #{mixins.clamp-fontsize( mixins.typescale(9, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-massive: #{mixins.clamp-fontsize( mixins.typescale(8, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-huge: #{mixins.clamp-fontsize( mixins.typescale(7, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-xxlarge: #{mixins.clamp-fontsize( mixins.typescale(6, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-xlarge: #{mixins.clamp-fontsize( mixins.typescale(5, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-larger: #{mixins.clamp-fontsize( mixins.typescale(4, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-large: #{mixins.clamp-fontsize( mixins.typescale(3, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-major: #{mixins.clamp-fontsize( mixins.typescale(2, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-medium: #{mixins.clamp-fontsize( mixins.typescale(1, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-regular: #{mixins.clamp-fontsize( mixins.typescale(0, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-small: #{mixins.clamp-fontsize( mixins.typescale(-1, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-smaller: #{mixins.clamp-fontsize( mixins.typescale(-2, "minorThird"), 1.2 )};
+	--wp--preset--font-size--scaler-xsmall: #{mixins.clamp-fontsize( mixins.typescale(-3, "minorThird"), 1.2 )};
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: unset;
+	--wp--preset--font-size--scaler-colossus: #{mixins.clamp-fontsize( mixins.typescale(10, "minorThird") )};
+	--wp--preset--font-size--scaler-gigantic: #{mixins.clamp-fontsize( mixins.typescale(9, "minorThird") )};
+	--wp--preset--font-size--scaler-massive: #{mixins.clamp-fontsize( mixins.typescale(8, "minorThird") )};
+	--wp--preset--font-size--scaler-huge: #{mixins.clamp-fontsize( mixins.typescale(7, "minorThird") )};
+	--wp--preset--font-size--scaler-xxlarge: #{mixins.clamp-fontsize( mixins.typescale(6, "minorThird") )};
+	--wp--preset--font-size--scaler-xlarge: #{mixins.clamp-fontsize( mixins.typescale(5, "minorThird") )};
+	--wp--preset--font-size--scaler-larger: #{mixins.clamp-fontsize( mixins.typescale(4, "minorThird") )};
+	--wp--preset--font-size--scaler-large: #{mixins.clamp-fontsize( mixins.typescale(3, "minorThird") )};
+	--wp--preset--font-size--scaler-major: #{mixins.clamp-fontsize( mixins.typescale(1, "minorThird") )};
+	--wp--preset--font-size--scaler-medium: #{mixins.clamp-fontsize( mixins.typescale(1, "minorThird") )};
+	--wp--preset--font-size--scaler-regular: #{mixins.clamp-fontsize( mixins.typescale(0, "minorThird") )};
+	--wp--preset--font-size--scaler-small: #{mixins.clamp-fontsize( mixins.typescale(-1, "minorThird") )};
+	--wp--preset--font-size--scaler-smaller: #{mixins.clamp-fontsize( mixins.typescale(-2, "minorThird") )};
+	--wp--preset--font-size--scaler-xsmall: #{mixins.clamp-fontsize( mixins.typescale(-3, "minorThird") )};
+}
+
+p:empty {
+	display: none;
+}
+p:last-child {
+	margin: 0;
+}

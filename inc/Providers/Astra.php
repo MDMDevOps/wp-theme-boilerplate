@@ -13,15 +13,15 @@
 
 namespace Mwf\Theme\Providers;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\OnMount;
 
 /**
  * Class for interacting with astra directly
  *
  * @subpackage Providers
  */
-class Astra extends WPCore\Abstracts\Mountable
+class Astra extends Mwf\WPCore\Abstracts\Mountable
 {
 	/**
 	 * Mount specific astra actions not related to class functions

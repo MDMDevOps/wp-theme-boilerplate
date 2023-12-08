@@ -13,15 +13,15 @@
 
 namespace Mwf\Theme\Handlers;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\OnMount;
 
 /**
  * Adds image support.
  *
  * @subpackage Services
  */
-class Images extends WPCore\Abstracts\Mountable
+class Images extends Mwf\WPCore\Abstracts\Mountable
 {
 	/**
 	 * Add custom image sizes

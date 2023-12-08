@@ -13,15 +13,15 @@
 
 namespace Mwf\Theme;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\ContainerBuilder;
 
 /**
  * Main theme file
  *
  * @subpackage Main
  */
-class Theme extends WPCore\Main
+class Theme extends Mwf\WPCore\Main
 {
 	/**
 	 * Constructor for new instance of plugin

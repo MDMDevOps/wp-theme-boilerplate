@@ -1,0 +1,58 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./frontend/index.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+/**
+ * Strips the unit of a given input
+ */
+/**
+ * Generate Responsive Heading Sizes
+ */
+body {
+  --wp--preset--font-size--scaler-colossus: clamp(6.1917364224rem, calc(2.8064527694vw + 5.034074655rem), 7.4300837069rem);
+  --wp--preset--font-size--scaler-gigantic: clamp(5.159780352rem, calc(2.3387106411vw + 4.1950622125rem), 6.1917364224rem);
+  --wp--preset--font-size--scaler-massive: clamp(4.29981696rem, calc(1.9489255343vw + 3.4958851771rem), 5.159780352rem);
+  --wp--preset--font-size--scaler-huge: clamp(3.5831808rem, calc(1.6241046119vw + 2.9132376476rem), 4.29981696rem);
+  --wp--preset--font-size--scaler-xxlarge: clamp(2.985984rem, calc(1.3534205099vw + 2.4276980397rem), 3.5831808rem);
+  --wp--preset--font-size--scaler-xlarge: clamp(2.48832rem, calc(1.1278504249vw + 2.0230816997rem), 2.985984rem);
+  --wp--preset--font-size--scaler-larger: clamp(2.0736rem, calc(0.9398753541vw + 1.6859014164rem), 2.48832rem);
+  --wp--preset--font-size--scaler-large: clamp(1.728rem, calc(0.7832294618vw + 1.404917847rem), 2.0736rem);
+  --wp--preset--font-size--scaler-major: clamp(1.44rem, calc(0.6526912181vw + 1.1707648725rem), 1.728rem);
+  --wp--preset--font-size--scaler-medium: clamp(1.2rem, calc(0.5439093484vw + 0.9756373938rem), 1.44rem);
+  --wp--preset--font-size--scaler-regular: clamp(1rem, calc(0.4532577904vw + 0.8130311615rem), 1.2rem);
+  --wp--preset--font-size--scaler-small: clamp(0.8333333333rem, calc(0.3777148253vw + 0.6775259679rem), 1rem);
+  --wp--preset--font-size--scaler-smaller: clamp(0.6944444444rem, calc(0.3147623544vw + 0.5646049732rem), 0.8333333333rem);
+  --wp--preset--font-size--scaler-xsmall: clamp(0.5787037037rem, calc(0.262301962vw + 0.4705041444rem), 0.6944444444rem);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+  --wp--preset--font-size--scaler-colossus: clamp(6.1917364224rem, calc(15.0102701192vw - 0.0000000018rem), 12.8150181125rem);
+  --wp--preset--font-size--scaler-gigantic: clamp(5.159780352rem, calc(12.5085584326vw - 0.0000000015rem), 10.6791817604rem);
+  --wp--preset--font-size--scaler-massive: clamp(4.29981696rem, calc(10.4237986939vw - 0.0000000012rem), 8.8993181337rem);
+  --wp--preset--font-size--scaler-huge: clamp(3.5831808rem, calc(8.6864989116vw - 0.000000001rem), 7.4160984447rem);
+  --wp--preset--font-size--scaler-xxlarge: clamp(2.985984rem, calc(7.238749093vw - 0.0000000008rem), 6.1800820373rem);
+  --wp--preset--font-size--scaler-xlarge: clamp(2.48832rem, calc(6.0322909108vw - 0.0000000007rem), 5.1500683644rem);
+  --wp--preset--font-size--scaler-larger: clamp(2.0736rem, calc(5.0269090923vw - 0.0000000006rem), 4.291723637rem);
+  --wp--preset--font-size--scaler-large: clamp(1.728rem, calc(4.1890909103vw - 0.0000000005rem), 3.5764363642rem);
+  --wp--preset--font-size--scaler-major: clamp(1.2rem, calc(2.9090909099vw - 0.0000000003rem), 2.483636364rem);
+  --wp--preset--font-size--scaler-medium: clamp(1.2rem, calc(2.9090909099vw - 0.0000000003rem), 2.483636364rem);
+  --wp--preset--font-size--scaler-regular: clamp(1rem, calc(2.4242424249vw - 0.0000000003rem), 2.06969697rem);
+  --wp--preset--font-size--scaler-small: clamp(0.8333333333rem, calc(2.0202020208vw - 0.0000000002rem), 1.724747475rem);
+  --wp--preset--font-size--scaler-smaller: clamp(0.6944444444rem, calc(1.683501684vw - 0.0000000002rem), 1.4372895625rem);
+  --wp--preset--font-size--scaler-xsmall: clamp(0.5787037037rem, calc(1.40291807vw - 0.0000000002rem), 1.1977413021rem);
+}
+
+p:empty {
+  display: none;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+/*# sourceMappingURL=bundle.css.map*/

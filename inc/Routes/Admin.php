@@ -13,20 +13,20 @@
 
 namespace Mwf\Theme\Routes;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\DI\OnMount;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\OnMount;
 
 /**
  * Admin router class
  *
  * @subpackage Route
  */
-class Admin extends WPCore\Abstracts\Mountable implements
-	WPCore\Interfaces\Uses\ScriptDispatcher,
-	WPCore\Interfaces\Uses\StyleDispatcher
+class Admin extends Mwf\WPCore\Abstracts\Mountable implements
+	Mwf\WPCore\Interfaces\Uses\ScriptDispatcher,
+	Mwf\WPCore\Interfaces\Uses\StyleDispatcher
 {
-	use WPCore\Traits\Uses\ScriptDispatcher;
-	use WPCore\Traits\Uses\StyleDispatcher;
+	use Mwf\WPCore\Traits\Uses\ScriptDispatcher;
+	use Mwf\WPCore\Traits\Uses\StyleDispatcher;
 
 	/**
 	 * Load actions and filters, and other setup requirements

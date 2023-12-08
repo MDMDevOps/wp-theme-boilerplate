@@ -15,8 +15,8 @@ namespace Mwf\Theme\Controllers;
 
 use Mwf\Theme\Handlers as Handler;
 
-use Mwf\Theme\Deps\WPCore,
-	Mwf\Theme\Deps\WPCore\DI\ContainerBuilder;
+use Mwf\Theme\Deps\Mwf\WPCore,
+	Mwf\Theme\Deps\Mwf\WPCore\DI\ContainerBuilder;
 
 /**
  * Service controller class
@@ -25,7 +25,7 @@ use Mwf\Theme\Deps\WPCore,
  *
  * @subpackage Controllers
  */
-class Handlers extends WPCore\Abstracts\Mountable implements WPCore\Interfaces\Controller
+class Handlers extends Mwf\WPCore\Abstracts\Mountable implements Mwf\WPCore\Interfaces\Controller
 {
 	/**
 	 * Get definitions that should be added to the service container
